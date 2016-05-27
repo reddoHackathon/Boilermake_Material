@@ -21,7 +21,7 @@ color_rgb.b=0;
 
 Alternativ kann hue (Farbwert), saturation (Sättigung) und value (Helligkeit), [HSV](https://de.wikipedia.org/wiki/HSV-Farbraum) definiert werden und dann in RGB umgerechnet werden. Eignet sich gut für organische Fades zwischen Farben.
 
-![alt text](https://github.com/reddoHackathon/Boilermake_Material/pics/hsv.jpg "HSV")
+![alt text](https://github.com/reddoHackathon/Boilermake_Material/blob/master/pics/hsv.jpg "HSV")
 
 ### Sensor auslesen
 Analogen Eingang lesen (wird als 10 bit Wert ausgelesen)

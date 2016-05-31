@@ -6,8 +6,7 @@
 * Libraries von `Repository-Ordner/Arduino/libraries` in `Systembenutzerordner/Dokumente/Arduino/libraries` kopieren
 
 ## Beispiele ausprobieren
-Beispiele befinden sich in `Repository-Ordner/Arduino/examples` für die jeweiligen Sensortypen
-Oben im Beispiel ist beschrieben wie der Sensor und das Herz an den Arduino angeschlossen werden.
+Beispiele befinden sich in `Repository-Ordner/Arduino/examples` für die jeweiligen Sensortypen. Oben im Beispiel ist beschrieben wie der Sensor und das Herz an den Arduino angeschlossen werden.
 
 ### LEDs ansteuern
 Helligkeitswerte für rot, grün und blau (RGB) für jeden Pixel werden seriell in den LED Kreis geschickt. Prinzip Schieberegister. Jeder Pixel erzeugt die Signale für die LEDs.

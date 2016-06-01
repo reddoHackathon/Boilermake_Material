@@ -39,9 +39,15 @@ sudo mv fcserver ~/
 ### Beispiele ausprobieren
 
 
-Beispiele befinden sich in `Repository-Ordner/Arduino/examples` für die jeweiligen Sensortypen
-=======
-## Beispiele ausprobieren
+## Workshop Boilermake - Arduino
+
+### Software installieren
+* Arduino Software von [https://www.arduino.cc/]() runterladen und installieren
+* Workshop Repository runterladen [https://github.com/reddoHackathon/Boilermake_Material]() 
+* Libraries von `Repository-Ordner/Arduino/libraries` in `Systembenutzerordner/Dokumente/Arduino/libraries` kopieren
+
+
+### Beispiele ausprobieren
 Beispiele befinden sich in `Repository-Ordner/Arduino/examples` für die jeweiligen Sensortypen. Oben im Beispiel ist beschrieben wie der Sensor und das Herz an den Arduino angeschlossen werden.
 
 #### LEDs ansteuern

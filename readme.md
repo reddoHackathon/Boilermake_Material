@@ -1,14 +1,45 @@
-# Boilermake - Interactive Lights
+# Interactive Lights
+Das interaktive Schild wird von einem Raspberry PI mithilfe eines Fadecandy angesteuert.
 
-## Software installieren
+## Ansteuerung des Schildes
+
+## Installation des Servers auf dem PI
+### Raspbian installieren
+[https://www.raspberrypi.org/documentation/installation/installing-images/]()
+
+### openFrameworks installieren
+[http://openframeworks.cc/setup/raspberrypi/raspberry-pi-getting-started/]()
+
+Kompilieren mit 4 Kernen aktivieren. Dazu ``sudo nano ~/.profile`` öffnen. Und in die letzte Zeile ``export MAKEFLAGS=-j4`` eintragen [(Link)](https://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide-0-8-4/18690).
+
+### Interactive Lights Server installieren
+
+
+### Fadecandy Server installieren
+```
+git clone git://github.com/scanlime/fadecandy
+cd fadecandy/server
+make submodules
+make
+sudo mv fcserver ~/
+```
+
+### Autostart aktivieren
+
+### Beispiele ausprobieren
+
+
+## Workshop Hinweise 
+
+### Software installieren
 * Arduino Software von [https://www.arduino.cc/]() runterladen und installieren
 * Workshop Repository runterladen [https://github.com/reddoHackathon/Boilermake_Material]() 
 * Libraries von `Repository-Ordner/Arduino/libraries` in `Systembenutzerordner/Dokumente/Arduino/libraries` kopieren
 
-## Beispiele ausprobieren
+### Beispiele ausprobieren
 Beispiele befinden sich in `Repository-Ordner/Arduino/examples` für die jeweiligen Sensortypen
 
-### LEDs ansteuern
+#### LEDs ansteuern
 Helligkeitswerte für rot, grün und blau (RGB) für jeden Pixel werden seriell in den LED Kreis geschickt. Prinzip Schieberegister. Jeder Pixel erzeugt die Signale für die LEDs.
 
 Die Farbe der LEDs wird über drei Werte für RGB (jeweils Wert zwischen 0 und 255) definiert. Z.B. erreicht man gelb durch rot und grün gleicher Anteile:
@@ -23,7 +54,7 @@ Alternativ kann hue (Farbwert), saturation (Sättigung) und value (Helligkeit), 
 
 ![alt text](https://github.com/reddoHackathon/Boilermake_Material/blob/master/pics/hsv.jpg "HSV")
 
-### Sensor auslesen
+#### Sensor auslesen
 Analogen Eingang lesen (wird als 10 bit Wert ausgelesen)
 
 `sensorValue = analogRead(A2);`
@@ -40,7 +71,7 @@ color.h=sensorValue;  // hue Wert der LEDs setzen (muss zwischen 0 und 255 liege
 set_display_color_hsv();
 ```
 
-### Weitere hilfreiche Funktionen
+#### Weitere hilfreiche Funktionen
 Wertebereich auf neuen Wertebereich abbilden. Z.B. liefert das lesen eines analogen Eingangs am Arduino Werte zwischen 0 und 1023. Diese kann man z.B. auf Werte zwischen 100 und 200 mappen.
 
 ```c

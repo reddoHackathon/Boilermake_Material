@@ -36,13 +36,13 @@ sudo mv fcserver ~/
 * Workshop Repository runterladen [https://github.com/reddoHackathon/Boilermake_Material]() 
 * Libraries von `Repository-Ordner/Arduino/libraries` in `Systembenutzerordner/Dokumente/Arduino/libraries` kopieren
 
-<<<<<<< HEAD
 ### Beispiele ausprobieren
+
+
 Beispiele befinden sich in `Repository-Ordner/Arduino/examples` für die jeweiligen Sensortypen
 =======
 ## Beispiele ausprobieren
 Beispiele befinden sich in `Repository-Ordner/Arduino/examples` für die jeweiligen Sensortypen. Oben im Beispiel ist beschrieben wie der Sensor und das Herz an den Arduino angeschlossen werden.
->>>>>>> 8dd39782e5e021cf2a03a33cfd3cb30474e026a7
 
 #### LEDs ansteuern
 Helligkeitswerte für rot, grün und blau (RGB) für jeden Pixel werden seriell in den LED Kreis geschickt. Prinzip Schieberegister. Jeder Pixel erzeugt die Signale für die LEDs.

@@ -2,8 +2,11 @@
 Das interaktive Schild wird von einem Raspberry PI mithilfe eines Fadecandy angesteuert.
 
 **Inhalt**
-[Ansteuerung des Schildes](https://github.com/reddoHackathon/Boilermake_Material/blob/master/openFrameworks/ofxOPC/ReadMe.md#ansteuerung)
-[Interactive Light Server selbst einrichten](https://github.com/reddoHackathon/Boilermake_Material/blob/master/openFrameworks/ofxOPC/ReadMe.md#interactive)
+
+* [Ansteuerung des Schildes](https://github.com/reddoHackathon/Boilermake_Material#ansteuerung-des-schildes)
+* [Interactive Light Server selbst einrichten](https://github.com/reddoHackathon/Boilermake_Material#interactive-light-server-selbst-einrichten)
+* [Workshop Boilermake - Arduino](https://github.com/reddoHackathon/Boilermake_Material#workshop-boilermake---arduino)
+
 
 ## Ansteuerung des Schildes
 Generell kann das Schild per TCP über das [Open Pixel Control](http://openpixelcontrol.org/) Protokoll angesprochen werden. 
@@ -147,16 +150,6 @@ cd ~/[ofPfad]/apps/examples/client_idle_animation
 make
 make RunRelease
 ```
-
-
-## Workshop Hinweise 
-
-### Software installieren
-* Arduino Software von [https://www.arduino.cc/]() runterladen und installieren
-* Workshop Repository runterladen [https://github.com/reddoHackathon/Boilermake_Material]() 
-* Libraries von `Repository-Ordner/Arduino/libraries` in `Systembenutzerordner/Dokumente/Arduino/libraries` kopieren
-
-### Beispiele ausprobieren
 
 
 ## Workshop Boilermake - Arduino
